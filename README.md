@@ -62,7 +62,7 @@ lib/
 ### Run the app
 
 ```bash
-git clone https://github.com/yasastw/ecoplate.git
+git clone https://github.com/yasaswijethunga/Meal-Planner-App.git
 cd ecoplate
 flutter pub get
 flutter run
