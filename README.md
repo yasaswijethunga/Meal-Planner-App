@@ -78,8 +78,13 @@ flutter test
 
 ---
 
-## Developer
+## Team
 
-**Yasas Wijethunga**  
-yasastw@gmail.com  
-TAMK Software Engineering
+A collaboration between **TAMK** (Tampere University of Applied Sciences, Finland) and **THWS** (Technische Hochschule Würzburg-Schweinfurt, Germany).
+
+| Name | Email | Institution |
+|---|---|---|
+| Yasas Wijethunga | yasas.wijethunga@tuni.fi | TAMK |
+| Waruna Bandara Rathnamalala | waruna.rathnamalalabandaralage@tuni.fi | TAMK |
+| Maha Maligaspe | maha.maligaspe@tuni.fi | TAMK |
+| Noah Frei | noah.frei@study.thws.de | THWS |
