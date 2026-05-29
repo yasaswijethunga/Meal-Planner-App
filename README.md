@@ -56,7 +56,7 @@ lib/
 
 | Browse | Recipe Detail | Meal Planner | Dark Mode |
 |---|---|---|---|
-| ![Browse](screenshots/01_browse.png) | ![Detail](screenshots/03_recipe_detail.png) | ![Planner](screenshots/05_meal_planner.png) | ![Dark](screenshots/07_dark_mode.png) |
+| ![Browse](screenshots/01_browse.jpg) | ![Detail](screenshots/03_recipe_detail.jpg) | ![Planner](screenshots/05_meal_planner.jpg) | ![Dark](screenshots/07_dark_mode.jpg) |
 
 ## Getting Started
 
