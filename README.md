@@ -9,10 +9,10 @@ Built as a Mobile Applications exam project at **TAMK (Tampere University of App
 ## Features
 
 - **Browse Recipes** — Browse recipes by eco-friendly categories (Vegan, Vegetarian, Pasta, Seafood, etc.) with infinite scroll pagination
-- **Eco Score** — Every recipe gets an eco score (1–5 leaves) based on its environmental impact
-- **Recipe Details** — Full ingredients list, cooking instructions, and YouTube video link
+- **Eco Score** — Every recipe gets an eco score (1–5, shown as a coloured label with five dots) based on its recipe category
+- **Recipe Details** — Photo, category, region, eco score, full ingredients list and cooking instructions
 - **Search** — Search recipes by name with input validation
-- **Weekly Meal Planner** — Assign recipes to each day of the week; plan persists across sessions
+- **Weekly Meal Planner** — Search and assign a recipe to each day of the week, open or remove it later; plan persists across sessions
 - **Dark Mode** — System-aware dark/light theme toggle
 - **Offline persistence** — Meal plan saved locally with SharedPreferences
 
@@ -37,17 +37,20 @@ Built as a Mobile Applications exam project at **TAMK (Tampere University of App
 ```
 lib/
 ├── main.dart                    # App entry point
-├── models/                      # Data models (Recipe, MealPlan)
-├── services/                    # API service (TheMealDB)
-├── providers/                   # Riverpod state providers
+├── models/                      # Data models (Recipe, RecipeSummary, Ingredient, MealPlan)
+├── services/                    # API service (TheMealDB) and eco-score mapping
+├── providers/                   # Riverpod providers (recipes, meal plan, theme, SharedPreferences)
 ├── router/                      # GoRouter configuration
+├── validators/                  # Search input validation
 ├── screens/                     # UI screens
+│   ├── home_screen.dart         # Bottom navigation (Browse, Search, Planner, Settings)
 │   ├── browse_tab.dart          # Recipe browsing with categories
 │   ├── search_screen.dart       # Recipe search
 │   ├── meal_planner_screen.dart # Weekly planner
 │   ├── recipe_detail_screen.dart # Recipe details
-│   └── settings_screen.dart    # Theme & about
-└── widgets/                     # Reusable widgets (RecipeCard, EcoBadge)
+│   ├── settings_screen.dart     # Theme & about link
+│   └── about_screen.dart        # About EcoPlate and team
+└── widgets/                     # Reusable widgets (RecipeCard, EcoBadge, IngredientTile)
 ```
 
 ---
@@ -69,7 +72,7 @@ lib/
 
 ```bash
 git clone https://github.com/yasaswijethunga/Meal-Planner-App.git
-cd ecoplate
+cd Meal-Planner-App
 flutter pub get
 flutter run
 ```
