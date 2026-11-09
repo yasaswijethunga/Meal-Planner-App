@@ -13,7 +13,7 @@ Built as a Mobile Applications exam project at **TAMK (Tampere University of App
 - **Recipe Details** — Photo, category, region, eco score, full ingredients list and cooking instructions
 - **Search** — Search recipes by name with input validation
 - **Weekly Meal Planner** — Search and assign a recipe to each day of the week, open or remove it later; plan persists across sessions
-- **Dark Mode** — System-aware dark/light theme toggle
+- **Dark Mode** — Light/dark theme toggle, remembered between sessions
 - **Offline persistence** — Meal plan saved locally with SharedPreferences
 
 ---
